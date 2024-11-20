@@ -757,11 +757,20 @@ footer a:hover {
     }
 
     /*form changes*/
-    #contact {
-        
+    #contact form {
+        display: grid;
+        margin-left: -10rem;
+        width: 150%;
+        justify-items: center;
+        grid-template-areas: "first-name contact-method destination" "last-name email travel-time" "phone submit submit";                  
+    }
+
+    #contact h3 {
+        margin-left: -10rem;
+    }
+
+    fieldset {
+        display: flex;
     }
 
 }
-
-
-
