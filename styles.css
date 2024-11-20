@@ -677,7 +677,94 @@ footer a:hover {
         margin-bottom: 0;
     }
 
-  }
+}
 
-@media (min-width: 1200px)
+@media (min-width: 1250px) {
+    /*header changes*/
+    header {
+        align-items: center;
+    }
+
+    header #logo img {
+        width: 10rem;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        margin-left: -2rem;
+        margin-top: 1rem;
+    }
+
+    header p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+
+    /*navigation changes*/
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    #menutoggle ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*majorca intro changes*/
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        grid-gap: 1.5rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #intro h2 {
+        margin-top: 2rem;
+    }
+
+    #intro p {
+        grid-column: 1; 
+        margin-top: -5rem;
+    }
+
+    #img-grid {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    #img-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /*plan changes*/
+    #plan div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /*testimonial changes*/
+    #testimonials div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /*form changes*/
+    #contact {
+        
+    }
+
+}
+
+
 
