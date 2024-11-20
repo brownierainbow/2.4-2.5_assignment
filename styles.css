@@ -79,7 +79,7 @@ table {
     --form: "Montserrat", sans-serif;
 }
 
-/*global styles*/
+/*global styles, mobile first styling for small screen sizing*/
 body {
     background-image: linear-gradient(var(--teal), var(--white) 6%);
     width: 100%;
@@ -89,7 +89,7 @@ body {
 header { 
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 1rem 1rem;
 }
 
 header #logo img {
@@ -164,7 +164,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 15px;
+    padding: 1rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -177,7 +177,7 @@ nav ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem; 
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     margin: 0;
     cursor: pointer;
     text-align: center;
@@ -207,15 +207,14 @@ nav ul li a {
     text-decoration: none;
     background-color: var(--teal);
     color: var(--black);
-    padding: 15px;
-    margin: 5px;
+    padding: 1rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 }
 
 #menu-toggle ul li a:hover {
-    background-color: var(--teal); 
+    background-color: var(--yellow); 
 }
 
 /*intro styling*/
@@ -244,7 +243,6 @@ nav ul li a {
 }
 
 /*plan styling*/
-
 #plan div {
     background-color: var(--yellow);
     display: grid;
@@ -277,8 +275,8 @@ nav ul li a {
     height: 20rem;
     border: 0.2rem solid var(--white);
     border-radius: 0.6rem;
-    padding: 10px;
-    margin: 15px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #testimonials div {
@@ -335,7 +333,7 @@ nav ul li a {
 #about img {
     width: 55%;
     height: 55%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 #about h3 {
@@ -386,13 +384,13 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 0.8rem;
     color: var(--darkgray);
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     margin-top: 1.5rem;
 }
 
 #contact input {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     box-sizing: border-box;
     font-family: var(--form);
     border-color: var(--purple);
@@ -400,10 +398,10 @@ nav ul li a {
 
 #contact .required {
     color: var(--purple);
-    margin-left: 5px;
+    margin-left: 0.5rem;
 }
 
-/*Radio Button Styles */
+/*radio button styling to override default styling*/
 fieldset {
     margin: 1.5rem 0;
     padding: 0;
@@ -437,7 +435,7 @@ input[type="radio"] {
     height: 40px;
     border: 2px solid var(--purple);
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 1rem;
     position: relative;
     flex-shrink: 0;
 }
@@ -479,7 +477,7 @@ input[type="radio"]:checked + .radio-control::before {
     width: 100%;
     color: var(--darkgray);
     border: 2px solid var(--purple);
-    padding: 10px 12px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
@@ -487,7 +485,7 @@ input[type="radio"]:checked + .radio-control::before {
 input[type=submit] {
 	background-color: var(--purple);
     color: var(--white);
-    padding: 12px 20px;
+    padding: 1rem 2rem;
     font-family: var(--button);
     font-weight: bold;
     text-transform: uppercase;
@@ -537,8 +535,8 @@ footer a:hover {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        padding: 20px;
-        gap: 20px;
+        padding: 1rem;
+        gap: 1rem;
     }
 
     header #logo img {
@@ -548,7 +546,8 @@ footer a:hover {
 
     header h1 {
         font-size: 3rem;
-        margin: 0;
+        margin-top: 2rem;
+        margin-left: -1.5rem;
         padding: 0;
     }
 
@@ -571,7 +570,7 @@ footer a:hover {
 
     #menu-toggle ul {
         display: flex;
-        gap: 10px;
+        gap: 1rem;
     }
 
     #menu-toggle ul li {
@@ -595,7 +594,7 @@ footer a:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
-        grid-gap: 10px;
+        grid-gap: 1rem;
         margin: 0 auto;
         width: 80%; 
     }
@@ -659,10 +658,6 @@ footer a:hover {
         justify-content: center;
     }
 
-    .custom-select select {
-        height: 45px;
-    }
-
     /*footer changes*/
     footer {
         display: flex;
@@ -709,7 +704,7 @@ footer a:hover {
 
     #menutoggle ul {
         display: flex;
-        gap: 20px;
+        gap: 1rem;
         list-style: none;
         padding: 0;
         margin: 0;
